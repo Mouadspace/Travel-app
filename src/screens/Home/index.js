@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {SafeAreaView, ScrollView, Text, View} from 'react-native';
+import {FlatList, SafeAreaView, ScrollView, Text, View} from 'react-native';
 import Title from '../../components/Title';
 import styles from './style';
 import Categories from '../../components/Categories';
@@ -28,32 +28,38 @@ const Home = () => {
   }, [selectedCategory]);
 
   return (
-    <SafeAreaView>
-      <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
-        <Title text="Where do" style={{fontWeight: 'normal'}} />
-        <Title text="you want to go?" />
-        <Title text="Explore Attractions" style={styles.subTitle} />
-        <Categories
-          selectedCategory={selectedCategory}
-          onCategoryPress={setSelectedCategory}
-          categories={[ALL, ...categories]}
-        />
-
-        <ScrollView
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={styles.row}>
-          {data?.map((item, index) => {
-            return (
-              <AttractionCard
-                key={item.id}
-                imgSrc={item.images ? item.images[0] : null}
-                title={item.name}
-                subTitle={item.city}
-              />
-            );
-          })}
-        </ScrollView>
-      </ScrollView>
+    <SafeAreaView style={styles.container}>
+      <FlatList
+        data={data}
+        showsVerticalScrollIndicator={false}
+        ListHeaderComponent={
+          <>
+            <Title
+              text="Where do"
+              style={{fontWeight: 'normal', paddingTop: 32}}
+            />
+            <Title text="you want to go?" />
+            <Title text="Explore Attractions" style={styles.subTitle} />
+            <Categories
+              selectedCategory={selectedCategory}
+              onCategoryPress={setSelectedCategory}
+              categories={[ALL, ...categories]}
+            />
+          </>
+        }
+        numColumns={2}
+        keyExtractor={item => String(item?.id)}
+        renderItem={({item}) => {
+          return (
+            <AttractionCard
+              key={item.id}
+              imgSrc={item.images ? item.images[0] : null}
+              title={item.name}
+              subTitle={item.city}
+            />
+          );
+        }}
+      />
     </SafeAreaView>
   );
 };

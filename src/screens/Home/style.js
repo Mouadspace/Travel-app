@@ -3,7 +3,6 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 32,
     paddingLeft: 32,
   },
   subTitle: {

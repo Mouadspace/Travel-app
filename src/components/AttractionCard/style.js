@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
   subTitle: {
     fontSize: 10,
     color: 'rgba(0,0,0,.5)',
-    marginbottom: 12,
     marginRight: 8,
   },
   row: {

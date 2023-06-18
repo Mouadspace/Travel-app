@@ -19,6 +19,24 @@
   },
   {
     "id": 2,
+    "name": "Hassan II",
+    "city": "Casablanca",
+    "country": "Morroco",
+    "entry_price": "free",
+    "address": "Piazza del Duomo, 56126 Pisa PI, Italy",
+    "opening_time": "9:00 AM",
+    "closing_time": "07:00 PM",
+    "categories": ["Popular", "Most Viewed"],
+    "images": [
+      "https://morocco-travel.com/wp-content/uploads/2019/03/Casablanca-City-L.jpg"
+    ],
+    "coordinates": {
+      "lat": 43.723,
+      "lon": 10.3966
+    }
+  },
+  {
+    "id": 3,
     "name": "Colosseum",
     "city": "Rome",
     "country": "Italy",
@@ -43,7 +61,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Taj Mahal",
     "city": "Agra",
     "country": "India",
@@ -63,7 +81,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Eiffel Tower",
     "city": "Paris",
     "country": "France",
@@ -84,7 +102,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Leaning Tower of Pisa",
     "city": "Pisa",
     "country": "Italy",
@@ -97,6 +115,25 @@
       "https://cdn.mos.cms.futurecdn.net/QF5qpbogF6JCsuogypL3Fd.jpg",
       "https://juliasalbum.com/wp-content/uploads/2019/04/leaning-tower-of-Pisa-Italy.jpg",
       "https://i.pinimg.com/originals/9d/d9/47/9dd947df69dfb08fc55218c1eecad7ce.jpg"
+    ],
+    "coordinates": {
+      "lat": 43.723,
+      "lon": 10.3966
+    }
+  },
+
+  {
+    "id": 7,
+    "name": "Santorini",
+    "city": "Santorini",
+    "country": "Greece",
+    "entry_price": "free",
+    "address": "Piazza del Duomo, 56126 Pisa PI, Italy",
+    "opening_time": "9:00 AM",
+    "closing_time": "07:00 PM",
+    "categories": ["Most Viewed"],
+    "images": [
+      "https://travelyart.com/wp-content/uploads/2021/05/Honeymoon-Destinations-in-Santorini-Greece.jpg"
     ],
     "coordinates": {
       "lat": 43.723,
