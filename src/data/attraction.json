@@ -4,8 +4,8 @@
     "name": "Hassan Tower",
     "city": "Rabat",
     "country": "Morroco",
-    "entry_price": "$10",
-    "address": "12 Rue Saadiyine Residence Juliette Apt. N° 9, Rabat-sale-kenitra, Rabat-sale-kenitra 10020 ·",
+    "entry_price": "free",
+    "address": "Rabat-sale-kenitra, Rabat-sale-kenitra 10020",
     "opening_time": "9:00 AM",
     "closing_time": "7:00 PM",
     "categories": ["Most Visited", "Recommended"],
@@ -23,8 +23,8 @@
     "city": "Casablanca",
     "country": "Morroco",
     "entry_price": "free",
-    "address": "Piazza del Duomo, 56126 Pisa PI, Italy",
-    "opening_time": "9:00 AM",
+    "address": "163, Casablanca, Casablanca-Settat 20000",
+    "opening_time": "8:00 AM",
     "closing_time": "07:00 PM",
     "categories": ["Popular", "Most Viewed"],
     "images": [
@@ -47,7 +47,7 @@
     "categories": ["Most Visited", "Most Viewed"],
     "images": [
       "https://www.arttrav.com/wp-content/uploads/2021/06/colosseum-alexandrakorey.jpg",
-      "https://www.history.com/.image/t_share/MTkwODIxMzcwNDI5NDQ5OTEw/gettyimages-1081719544.jpg",
+      "https://img.locationscout.net/images/2017-07/colosseum-rome-italy_l.jpeg",
       "https://upload.wikimedia.org/wikipedia/commons/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg",
       "https://static01.nyt.com/images/2022/06/12/world/12italy-colosseum-01/merlin_206622975_bf44e9c5-b817-405f-b46a-33f6fe5f88a8-superJumbo.jpg",
       "http://cdn.cnn.com/cnnnext/dam/assets/200925160752-colosseum-file-restricted.jpg",
@@ -91,7 +91,7 @@
     "closing_time": "10:45 PM",
     "categories": ["Most Visited", "Recommended", "Most Viewed"],
     "images": [
-      "https://www.planetware.com/photos-large/F/eiffel-tower.jpg",
+      "https://images8.alphacoders.com/431/431202.jpg",
       "https://www.thetrainline.com/cms/media/1360/france-eiffel-tower-paris.jpg?mode=crop&width=1080&height=1080&quality=70",
       "https://www.grunge.com/img/gallery/the-bizarre-history-of-the-eiffel-tower/l-intro-1602781703.jpg",
       "https://th-thumbnailer.cdn-si-edu.com/Q-oOOYwzuhWGLlUa0NvS4jbMGoI=/fit-in/1600x0/filters:focal(1500x1000:1501x1001)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/04/0f/040fc6b3-2c00-4592-9993-8c0c485fcf99/gettyimages-142198198.jpg"
@@ -128,8 +128,8 @@
     "city": "Santorini",
     "country": "Greece",
     "entry_price": "free",
-    "address": "Piazza del Duomo, 56126 Pisa PI, Italy",
-    "opening_time": "9:00 AM",
+    "address": "Mer Égée (mer Méditerranée)",
+    "opening_time": "12:00 AM",
     "closing_time": "07:00 PM",
     "categories": ["Most Viewed"],
     "images": [

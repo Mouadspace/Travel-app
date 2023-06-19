@@ -9,7 +9,7 @@ import categories from '../../data/categories.json';
 
 const ALL = 'All';
 
-const Home = () => {
+const Home = ({navigation}) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -53,6 +53,7 @@ const Home = () => {
           return (
             <AttractionCard
               key={item.id}
+              onPress={() => navigation.navigate('AttractionDetails', {item})}
               imgSrc={item.images ? item.images[0] : null}
               title={item.name}
               subTitle={item.city}
