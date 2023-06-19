@@ -26,7 +26,7 @@ const AttractionDetails = ({navigation, route}) => {
 
   const onBack = () => navigation.goBack();
   const onGalleryNavigate = () =>
-    navigation.navigate('Gallery', {item: item?.images});
+    navigation.navigate('Gallery', {images: item?.images});
 
   return (
     <SafeAreaView style={styles.container}>

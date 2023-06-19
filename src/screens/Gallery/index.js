@@ -1,12 +1,39 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {
+  FlatList,
+  SafeAreaView,
+  Image,
+  Pressable,
+  View,
+  Text,
+  TouchableOpacity,
+} from 'react-native';
 import styles from './style';
 
-const Gallery = ({route}) => {
-  const {item} = route?.params || {};
+const Gallery = ({navigation, route}) => {
+  const {images} = route?.params || {};
+
+  const onBack = () => {
+    navigation.goBack();
+  };
+
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{color: 'black'}}>{item}</Text>
+      <>
+        <FlatList
+          data={images}
+          style={styles.list}
+          renderItem={({item}) => (
+            <Image source={{uri: item}} style={styles.img} />
+          )}
+        />
+        <Pressable onPress={onBack} style={styles.iconContainer}>
+          <Image
+            source={require('../../assets/icons/back.png')}
+            style={styles.icon}
+          />
+        </Pressable>
+      </>
     </SafeAreaView>
   );
 };
