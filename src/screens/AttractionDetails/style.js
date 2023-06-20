@@ -4,7 +4,6 @@ import {StyleSheet, Dimensions} from 'react-native';
 const {height} = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
-    marginTop: 32,
     marginHorizontal: 20,
   },
   row: {
@@ -12,6 +11,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   mainImage: {
+    marginTop: 32,
+
     width: '100%',
     height: height / 2,
     flexDirection: 'column',
@@ -72,6 +73,25 @@ const styles = StyleSheet.create({
     color: '#000',
     fontWeight: '400',
     fontSize: 22,
+  },
+  map: {
+    width: '100%',
+    height: 200,
+  },
+  mapContainer: {
+    width: '100%',
+    height: 200,
+    borderRadius: 20,
+    overflow: 'hidden',
+    alignSelf: 'center',
+    top: 20,
+  },
+  showMap: {
+    paddingTop: 30,
+    textAlign: 'center',
+    color: '#4681A3',
+    fontSize: 16,
+    marginBottom: 80,
   },
 });
 
